@@ -1,0 +1,12 @@
+
+From DKA-DEVELOP
+
+Install Laravel into Docker:
+- PHP (Apache)
+- MySQL
+- Composer
+
+Directories:
+    - database  (mysql)
+    - dka-blog  (for Laravel)
+    - web       (php-apache)
