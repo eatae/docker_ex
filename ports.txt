@@ -1,0 +1,15 @@
+nginx_fpm_postgres_xdebug
+-------------------------
+postgres:
+    54320
+symfony_nginx:
+    8081
+
+
+
+my_words
+--------
+postgres:
+    54321
+symfony_nginx:
+    8082

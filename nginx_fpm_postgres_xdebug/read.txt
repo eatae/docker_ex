@@ -13,7 +13,7 @@ php-cli
 
 
 Show:
-    localhost:8081
+    localhost:8082
 
 Enter php-cli:
     docker exec -it symfony-php-cli bash
@@ -25,6 +25,6 @@ Docker-Compose up:
 Postgres connect for phpStorm:
     user:postgres
     localhost
-    54320
+    54321
 
 
