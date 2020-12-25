@@ -27,3 +27,7 @@ npm-debug.log
 yarn-error.log
 .phpunit.result.cache
 package-lock.json
+
+
+nginx_fpm_postgres_xdebug/db_data/*
+nginx_php-fpm_mysql/db/*
