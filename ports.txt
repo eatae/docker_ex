@@ -1,15 +1,23 @@
 nginx_fpm_postgres_xdebug
 -------------------------
-postgres:
-    54320
-symfony_nginx:
-    8081
+54320   postgres:
+8081    symfony_nginx:
+
 
 
 
 my_words
 --------
-postgres:
-    54321
-symfony_nginx:
-    8082
+8082    words_nginx:
+
+
+
+symfony_demo
+------------
+8083    symfony_nginx:
+
+
+
+symfony_guestBook
+------------
+8084    guest_book_nginx:
