@@ -1,0 +1,24 @@
+db_data
+    - хранение базы данных из контейнера
+
+nginx
+    - конф. для nginx
+    - Dockerfile
+
+php-cli
+    - Dockerfile
+
+
+----------------------
+
+
+Show:
+    localhost:8087
+
+Enter php-cli:
+    docker exec -it tryphp-php-cli bash
+
+Docker-Compose up:
+    docker-compose up --build -d
+    docker-compose up -d
+
