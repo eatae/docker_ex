@@ -1,4 +1,4 @@
-FROM nginx:1.17
+FROM nginx
 
 ADD ./symfony.conf /etc/nginx/conf.d/default.conf
 
