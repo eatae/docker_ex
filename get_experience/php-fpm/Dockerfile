@@ -25,7 +25,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install -j$(nproc) gd pdo pdo_pgsql
 
 #intl
-RUN apt-get install -y libicu-dev \
+RUN apt-get update && apt-get install -y libicu-dev \
     && docker-php-ext-configure intl \
     && docker-php-ext-install intl
 
