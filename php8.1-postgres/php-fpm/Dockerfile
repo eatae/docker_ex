@@ -37,4 +37,4 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 # add php.imi
 ADD ./php.ini /usr/local/etc/php/php.ini
 
-WORKDIR /var/www/mywords
+WORKDIR /var/www/apicast
