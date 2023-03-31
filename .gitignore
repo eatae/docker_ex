@@ -31,5 +31,6 @@ package-lock.json
 
 db_data/*
 db_data
+es_data
 nginx_fpm_postgres_xdebug/db_data/*
 nginx_php-fpm_mysql/db/*
