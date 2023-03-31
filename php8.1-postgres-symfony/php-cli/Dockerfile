@@ -45,4 +45,9 @@ RUN curl -sS https://get.symfony.com/cli/installer | bash \
 # add php.ini
 ADD ./php.ini /usr/local/etc/php/php.ini
 
+# GIT for Symfony insataller
+RUN git config --global user.email "al-loco@mail.ru" \
+    && git config --global user.name "Anton Kochetkov"
+
+
 WORKDIR /var/www/apicast

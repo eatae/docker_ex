@@ -20,7 +20,7 @@ services:
       - ../:/var/www/apicast
     container_name: ${COMPOSE_PROJECT_NAME}-fpm
     environment:
-          XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+          XDEBUG_CONFIG: "client_host=host.docker.internal"
           PHP_IDE_CONFIG: "serverName=Docker"
 
   php-cli:
@@ -31,7 +31,7 @@ services:
     command: sleep 25000
     container_name: ${COMPOSE_PROJECT_NAME}-cli
     environment:
-      XDEBUG_CONFIG: "remote_host=host.docker.internal remote_enable=1"
+      XDEBUG_CONFIG: "client_host=host.docker.internal"
       PHP_IDE_CONFIG: "serverName=Docker"
 
   postgres:
