@@ -39,12 +39,19 @@ services:
     env_file:
       - ./docker/.env.docker
     volumes:
-      - ./docker/db_data:/var/lib/postgresql/data
+      - ./docker/db_data:/var/lib/postgresql/data:rw
     container_name: ${COMPOSE_PROJECT_NAME}-postgres
     restart: unless-stopped
     ports:
-      - "54321:5432"
-# Переменные подхватываются автоматически имени из .env.docker
+      - "127.0.0.1:54321:5432"
+    healthcheck:
+        test:
+            - CMD-SHELL
+            - pg_isready -d "$${POSTGRES_DB:-postgres}" -U "$${POSTGRES_USER:-postgres}"
+        timeout: 5s
+        retries: 5
+        start_period: 60s
+# Переменные подхватываются автоматически по имени из .env.docker
 #    environment:
 #      - "POSTGRES_PASSWORD=${POSTGRES_PASSWORD}"
 #      - "POSTGRES_DB=${POSTGRES_DB}"
